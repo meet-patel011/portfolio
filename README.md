@@ -2,7 +2,7 @@ Meet Patel — Developer Portfolio
 
 Welcome to my personal portfolio website, built to showcase my projects, skills, and journey as a developer.
 
-Live Website: [[www.meetpatel.dev](https://www.meetpatel.dev)](https://meet-patel011.github.io/portfolio/)
+Live Website: (https://meet-patel011.github.io/portfolio/)
 
 Contains:
 - Pages: Home, About, Projects, Contact
