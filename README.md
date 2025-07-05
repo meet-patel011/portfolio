@@ -7,7 +7,7 @@ Welcome to my personal portfolio website, built to showcase my projects, skills,
 Contains:
 - Pages: Home, About, Projects, Contact
 - Social-media links and resume download
-- UI with dark + neon theme
+- UI with dark neon theme
 - Interactive alerts and hover animations
   
  Technologies used:
