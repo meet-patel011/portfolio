@@ -16,7 +16,7 @@ Contains:
 - JavaScript (minimal, for interactivity)
 - GitHub Pages for deployment
 
-Hone page
+Home page
 ![image](https://github.com/user-attachments/assets/69d9000d-58b7-474e-b900-94675e167ba6)
 ![image](https://github.com/user-attachments/assets/d273f510-be7d-4353-9445-1ba317f402cc)
 
