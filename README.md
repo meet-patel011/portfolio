@@ -19,11 +19,14 @@ Contains:
 Hone page
 ![image](https://github.com/user-attachments/assets/69d9000d-58b7-474e-b900-94675e167ba6)
 
+
 AboutMe page
 ![image](https://github.com/user-attachments/assets/0f05b03f-377a-4f56-8a30-610ea54e9c02)
 
+
 Projects page
 ![image](https://github.com/user-attachments/assets/92fef638-c752-4685-a753-c31cba12473c)
+
 
 Contact page
 ![image](https://github.com/user-attachments/assets/dfdf30dd-014b-46a5-b4a8-5d78608fbdd6)
