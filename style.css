@@ -279,41 +279,85 @@ footer {
   background: #070b16;
 }
 
-/* RESPONSIVE */
+/* =========================
+   MOBILE & TABLET FIXES
+   ========================= */
+
+/* Tablets & below */
 @media (max-width: 900px) {
-  .hero, .about {
+
+  /* HERO */
+  .hero {
     flex-direction: column;
     text-align: center;
+    padding: 60px 8%;
   }
-  .service-box {
-    flex-direction: column;
-  }
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
 
-@media (max-width: 500px) {
-  .project-grid {
-    grid-template-columns: 1fr;
+  .hero-text {
+    max-width: 100%;
   }
-  .hero h1 {
-    font-size: 36px;
-  }
-}
 
-@media (max-width: 900px) {
+  .hero-img {
+    margin-top: 40px;
+  }
+
+  .hexagon {
+    width: 220px;
+    height: 250px;
+  }
+
+  /* ABOUT */
   .about-container {
     flex-direction: column;
     text-align: center;
+    gap: 50px;
   }
 
-  .about-img {
-    margin-bottom: 40px;
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
   }
 }
+
+/* Mobile phones */
+@media (max-width: 500px) {
+
+  /* HERO TEXT */
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* IMAGE */
+  .hexagon {
+    width: 190px;
+    height: 220px;
+  }
+
+  /* SKILLS GRID */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* BUTTON */
+  .cv-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
+
+
 
