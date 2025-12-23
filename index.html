@@ -1,60 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>meetpatel</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-45YG71PJ4C"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-45YG71PJ4C');
-  </script>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Patel | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-      <header>
-        <a href="index.html" class="logo">
-          <img src="images/mp-logo.png" alt="MP Logo">
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="hero">
+
+  <!-- NAVBAR -->
+  <header class="navbar fade-in">
+    <h2 class="logo">Portfolio.</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header><br><br>
+
+  <!-- HERO -->
+  <section class="hero fade-in">
       <div class="hero-text">
-        <h1>Hi, I’m Meet</h1>
-        <h3>A Web Developer</h3>
-        <p>Always learning, always building.</p>
-        <a href="resume/Meet_Resume.pdf" class="btn" download>Download Resume</a>
+        <h4>Hello, It’s Me</h4>
+        <h1>Meet Patel</h1>
+        <h3>And I’m a <span id="typing"></span></h3>
+        <p>
+          Skilled in JavaScript, React, Node.js,
+          Express.js and modern web technologies.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/meet011/" target="_blank" class="icon linkedin">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+
+          <a href="https://github.com/meet-patel011/" target="_blank" class="icon github">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+          </a>
+
+          <a href="https://www.instagram.com/ptl_meet_011/" target="_blank" class="icon instagram">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+
+        <button class="btn">Download CV</button>
       </div>
+
+      <div class="hero-img">
+        <div class="hexagon">
+          <img src="images/profile.jpeg" alt="Meet Patel" />
+        </div>
+      </div>
+    </section><br><br><br><br><br>
+
+    <section id="about" class="about fade-in">
+    <div class="about-container">
+
+      <div class="about-img">
+        <div class="hexagon">
+          <img src="images/image.jpeg" alt="Meet Patel">
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <h4>Full Stack Developer</h4>
+
+        <p>
+          I’m a Full Stack Developer focused on building modern, responsive, and scalable web applications.
+       I enjoy working across both frontend and backend, translating ideas into functional digital experiences. I follow best practices, write maintainable code, and constantly refine my skills through hands-on projects and real-world problem solving. 
+       I’m always open to discussing new opportunities, collaborative projects, or learning experiences. If you’re looking for a dedicated developer who’s eager to grow and contribute, feel free to connect with me — I’d love to have a conversation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+      <section id="skills" class="skills fade-in">
+        <h2>Skills & Technologies</h2>
+        <p class="skills-desc">
+          Technologies I use to build modern, scalable, and efficient web applications.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <span>HTML5</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <span>CSS3</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            <span>Node.js</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js">
+            <span>Express.js</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+            <span>MongoDB</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <span>Python</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+            <span>Django</span>
+          </div>
+
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <span>Git / GitHub</span>
+          </div>
+
+        </div>
       </section>
-      <footer>
-      <div class="footer-icons">
-        <a href="https://github.com/meet-patel011" target="_blank">
-          <img src="images/github-logo.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/ptl_meet_011/" target="_blank">
-          <img src="images/Insta-logo.png" alt="Instagram">
-        </a>
-        <a href="mailto:pmeet0989@gmail.com">
-          <img src="images/mail-logo.png" alt="Email">
-        </a>
-        <a href="https://www.linkedin.com/in/meet-patel-91b7282b3/" target="_blank">
-          <img src="images/Linkedin-logo.png" alt="LinkedIn">
-        </a>
-      </div>
-      <p class="footer-text">© 2025 Meet Patel. All rights reserved.</p>
-    </footer>
-  </div>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects fade-in">
+    <h2>Latest Projects</h2>
+
+    <div class="project-grid">
+      <div class="project-card"></div>
+      <div class="project-card"></div>
+      <div class="project-card"></div>
+      <div class="project-card"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Me</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Meet Patel. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Typing Effect
+    const text = "Full Stack Developer";
+    let index = 0;
+
+    function typeEffect() {
+      if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+      }
+    }
+    typeEffect();
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll(".fade-in");
+
+    window.addEventListener("scroll", () => {
+      faders.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          el.classList.add("show");
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
-
-
