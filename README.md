@@ -4,5 +4,4 @@ Welcome to my personal portfolio website, built to showcase my projects, skills,
 
 Live Website: (https://meet-patel011.github.io/portfolio/)
 
-![image](https://github.com/user-attachments/assets/69d9000d-58b7-474e-b900-94675e167ba6)
 
