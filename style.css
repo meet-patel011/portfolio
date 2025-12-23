@@ -211,6 +211,23 @@ body {
   line-height: 1.6;
 }
 
+.cv-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 28px;
+  background: #00f7ff;
+  color: #0b1220;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: 0.25s ease;
+}
+
+/* subtle hover – not flashy */
+.cv-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.35);
+}
 
 /* PROJECTS */
 .projects {
