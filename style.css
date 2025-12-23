@@ -283,8 +283,17 @@ footer {
    MOBILE & TABLET FIXES
    ========================= */
 
-/* Tablets & below */
+/* ==================================
+   TABLETS & BELOW (≤ 900px)
+   ================================== */
 @media (max-width: 900px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 8%;
+  }
 
   /* HERO */
   .hero {
@@ -297,13 +306,34 @@ footer {
     max-width: 100%;
   }
 
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .cv-btn {
+    margin: 22px auto 0;
+  }
+
   .hero-img {
     margin-top: 40px;
   }
 
   .hexagon {
-    width: 220px;
-    height: 250px;
+    width: 210px;
+    height: 240px;
   }
 
   /* ABOUT */
@@ -317,45 +347,42 @@ footer {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  /* NAVBAR */
-  .navbar {
-    flex-direction: column;
-    gap: 12px;
-  }
 }
 
-/* Mobile phones */
-@media (max-width: 500px) {
+/* ==================================
+   MOBILE PHONES (≤ 480px)
+   ================================== */
+@media (max-width: 480px) {
 
-  /* HERO TEXT */
-  .hero h1 {
-    font-size: 32px;
+  /* HERO */
+  .hero {
+    padding: 50px 6%;
   }
 
-  .hero h3 {
-    font-size: 18px;
-  }
-
-  .hero p {
+  .hero-text h4 {
     font-size: 14px;
   }
 
-  /* IMAGE */
-  .hexagon {
-    width: 190px;
-    height: 220px;
+  .hero-text h1 {
+    font-size: 30px;
   }
 
-  /* SKILLS GRID */
+  .hero-text h3 {
+    font-size: 16px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .hexagon {
+    width: 180px;
+    height: 210px;
+  }
+
+  /* SKILLS */
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* BUTTON */
-  .cv-btn {
-    padding: 10px 22px;
-    font-size: 14px;
   }
 }
 
