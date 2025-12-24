@@ -106,22 +106,50 @@ body {
   transform: translateY(-2px);
 }
 
-
-/* HEXAGON */
 .hexagon {
-  width: 260px;
-  height: 300px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: #00f7ff;
-  padding: 5px;
-  box-shadow: 0 0 30px #00f7ff;
+  width: 350px;
+  height: 370px;
+  position: relative;
+  filter: drop-shadow(0 0 25px rgba(168, 180, 184, 0.427));
+  margin-top: 50px; 
 }
+
+/* The Hexagon Background */
+.hexagon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #00f7ffef;
+  clip-path: polygon(
+    50% 0%, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0% 75%, 
+    0% 25%
+  );
+  z-index: 1;
+}
+
 .hexagon img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  left: 51%;
+  bottom: 8%; 
+  transform: translateX(-50%);
+  height: 140%; 
+  width: 450px;
   object-fit: cover;
-  clip-path: inherit;
+  z-index: 2;
+
+  clip-path: polygon(
+    -20% -50%,   
+    120% -50%,  
+    120% 75%,   
+    50% 100%,   
+    -20% 75%   
+  );
 }
+
 
 .skills {
   padding: 80px 10%;
@@ -134,7 +162,6 @@ body {
   font-size: 15px;
 }
 
-/* FORCE 5 ITEMS PER ROW */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -176,7 +203,7 @@ body {
 
 
 
-/* ABOUT SECTION FIX */
+/* ABOUT SECTION  */
 .about {
   padding: 100px 10%;
 }
@@ -223,7 +250,7 @@ body {
   transition: 0.25s ease;
 }
 
-/* subtle hover – not flashy */
+/* subtle hover */
 .cv-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 10px rgba(0, 247, 255, 0.35);
@@ -252,25 +279,59 @@ body {
 }
 
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact {
   padding: 80px 10%;
   text-align: center;
 }
-.contact form {
-  max-width: 500px;
-  margin: auto;
+
+.contact-desc {
+  color: #aaa;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.contact-form {
+  max-width: 520px;
+  margin: 40px auto 0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
-.contact input,
-.contact textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
+
+.contact-form input,
+.contact-form textarea {
+  background: #131b2f;
+  border: 1px solid rgba(0, 247, 255, 0.25);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #fff;
+  font-size: 14px;
   outline: none;
 }
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #00f7ff;
+  color: #0b1220;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.35);
+}
+
 
 /* FOOTER */
 footer {
@@ -279,13 +340,7 @@ footer {
   background: #070b16;
 }
 
-/* =========================
-   MOBILE & TABLET FIXES
-   ========================= */
-
-/* ==================================
-   TABLETS & BELOW (≤ 900px)
-   ================================== */
+/* TABLETS & BELOW */
 @media (max-width: 900px) {
 
   /* NAVBAR */
@@ -293,6 +348,14 @@ footer {
     flex-direction: column;
     gap: 12px;
     padding: 18px 8%;
+    text-align: center;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
   /* HERO */
@@ -306,17 +369,16 @@ footer {
     max-width: 100%;
   }
 
-  .hero-text h1 {
+  .hero h1 {
     font-size: 34px;
   }
 
-  .hero-text h3 {
+  .hero h3 {
     font-size: 18px;
   }
 
-  .hero-text p {
+  .hero p {
     font-size: 14px;
-    margin-top: 10px;
   }
 
   .social-icons {
@@ -331,12 +393,24 @@ footer {
     margin-top: 40px;
   }
 
+  /* HERO HEXAGON */
   .hexagon {
-    width: 210px;
-    height: 240px;
+    width: 240px;
+    height: 260px;
+    margin-top: 30px;
+  }
+
+  .hexagon img {
+    height: 130%;
+    width: 320px;
+    bottom: 6%;
   }
 
   /* ABOUT */
+  .about {
+    padding: 80px 8%;
+  }
+
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -344,14 +418,31 @@ footer {
   }
 
   /* SKILLS */
+  .skills {
+    padding: 70px 8%;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
+
+  /* PROJECTS */
+  .projects {
+    padding: 70px 8%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 70px 8%;
   }
 }
 
-/* ==================================
-   MOBILE PHONES (≤ 480px)
-   ================================== */
+/* MOBILE PHONES (≤ 480px) */
 @media (max-width: 480px) {
 
   /* HERO */
@@ -359,32 +450,56 @@ footer {
     padding: 50px 6%;
   }
 
-  .hero-text h4 {
+  .hero h4 {
     font-size: 14px;
   }
 
-  .hero-text h1 {
+  .hero h1 {
     font-size: 30px;
   }
 
-  .hero-text h3 {
+  .hero h3 {
     font-size: 16px;
   }
 
-  .hero-text p {
+  .hero p {
     font-size: 13px;
   }
 
+  /* HEXAGON */
   .hexagon {
-    width: 180px;
-    height: 210px;
+    width: 200px;
+    height: 220px;
+    margin-top: 20px;
+  }
+
+  .hexagon img {
+    height: 125%;
+    width: 280px;
+    bottom: 5%;
   }
 
   /* SKILLS */
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* PROJECTS */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 60px 6%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
-
-
-
